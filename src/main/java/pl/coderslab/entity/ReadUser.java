@@ -1,18 +1,10 @@
 package pl.coderslab.entity;
 
 import pl.coderslab.ConsoleColors;
-
 import java.util.Scanner;
-
 import static pl.coderslab.entity.MainDao.mainMenu;
 
 public class ReadUser {
-
-    public static void main(String[] args) {
-
-        readUser();
-
-    }
 
     public static void readUser() {
         UserDao userDao = new UserDao();
@@ -23,9 +15,9 @@ public class ReadUser {
             System.out.println("Invalid data. Select again.");
         }
         int id = scanner.nextInt();
-        User read = userDao.read(id);
+        User user = userDao.read(id);
         System.out.println("User ID: " + id + ConsoleColors.RESET);
-        System.out.println(read);
+        System.out.println(user);
         System.out.println();
         mainMenu();
     }

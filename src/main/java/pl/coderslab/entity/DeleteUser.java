@@ -8,11 +8,6 @@ import static pl.coderslab.entity.MainDao.mainMenu;
 
 public class DeleteUser {
 
-    public static void main(String[] args) {
-
-        deleteUser();
-    }
-
     public static void deleteUser() {
         UserDao userDao = new UserDao();
         System.out.println(ConsoleColors.YELLOW + "Please provide user id to be removed: ");

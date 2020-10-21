@@ -8,10 +8,6 @@ import static pl.coderslab.entity.MainDao.mainMenu;
 
 public class CreateUser {
 
-    public static void main(String[] args) {
-        createUser();
-    }
-
     public static void createUser() {
         UserDao userDao = new UserDao();
         User user = new User();

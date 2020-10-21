@@ -8,10 +8,6 @@ import static pl.coderslab.entity.MainDao.mainMenu;
 
 public class UpdateUser {
 
-    public static void main(String[] args) {
-
-        updateUser();
-    }
     public static void updateUser() {
         UserDao userDao = new UserDao();
         System.out.println(ConsoleColors.YELLOW + "Please provide user id to be updated: ");

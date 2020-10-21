@@ -52,7 +52,9 @@ public class MainDao {
             case 6:
                 exit();
                 break;
-
+            default:
+                System.out.println(ConsoleColors.YELLOW + "Please select valid option.\n" + ConsoleColors.RESET);
+                mainMenu();
         }
     }
 }
